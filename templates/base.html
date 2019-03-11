@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}SmartNinja with Jinja{% endblock title %}</title>
-
-    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Title</title>
 </head>
-
 <body>
-    <h1>Let's try out Jinja!</h1>
-    <p>
-        <a href="/">Home</a>,
-        <a href="/about-me">About me</a>
-    </p>
+<h1>ja imam sve sto je u bazi</h1>
 
+<div>
+    <a href="/">home</a>,<a href="/about-me">about</a>
+</div>
+
+<div style="background-color: grey;">
+    <h3>head</h3>
     {% block content %}
     {% endblock content %}
+</div>
 
-    <hr>
+<div>
+    {% block ct %}
+    {% endblock ct %}
 
-    <p>Jinja documentation: <a href="http://jinja.pocoo.org/" target="_blank">click here</a></p>
+</div>
 </body>
 </html>
