@@ -2,6 +2,27 @@
 
 {% block content %}
 <p>im index</p>
+<p>neki text: {{ some_text }}</p>
+
+{% for city in cities %}
+<p>{{ city }}</p>
+{% endfor %}
+
+{% if jos_nesto %}
+<p>jos_nesto varijabla postoji</p>
+{% endif %}
+
+{% if jos_nesto_nesto %}
+<p>jos_nesto_nesto varijabla postoji</p>
+{% else%}
+<p>jos_nesto_nesto varijabla ne postoji</p>
+{% endif %}
+
+{% if jos_nesto %}
+<p>jos_nesto_nesto varijabla postoji</p>
+{% endif %}
+
+
 {% endblock content %}
 
 {% block ct %}

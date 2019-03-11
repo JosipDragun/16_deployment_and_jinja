@@ -11,7 +11,10 @@ def index():
 
     cities = ["Boston", "Vienna", "Paris", "Berlin", "Zagreb"]
 
-    return render_template("index.html", some_text=some_text, current_year=current_year, cities=cities)
+    return render_template("index.html", some_text=some_text,
+                           current_year=current_year,
+                           cities=cities,
+                           jos_nesto="jos_nesto")
 
 
 @app.route("/about-me")
